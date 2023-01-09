@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Revisão das aulas</title>
+    </head>
+    <body>
+        <h1>O comando 'h1' é usado para títulos.</h1>
+
+        <hr />
+
+        <p>O comando 'hr' é usado para fazer uma linha horizontal como está acima.
+           Porém é possível aumentar seu tamanho e até mesmo colocar cores.<br />
+           Veja abaixo:
+        </p>
+
+        <hr size="10" color="red" />
+
+        <p>O comando 'br' é utilizado para quebrar a linha, semelhante ao '\n' no python.<br />Temos também o comando 'em', <em>que serve para dar 
+           enfâse</em> no texto. <br />E o comando 'strong', que funciona para <strong>destacar em negrito</strong> um texto.</p>
+        <p>Existe uma diferença entre usar o 'br' para quebrar a linha ou iniciar um novo 'p'. Acima foi utilizado o comando 'br' duas vezes,
+           sendo elas depois do ".". Já ao escrever esse texto, foi utilizado outro comando 'p'.<br />Ou seja, o 'br' apenas joga o texto para 
+           a linha debaixo, já o 'p' dá um espaçamento para criar um novo parágrafo.
+        </p>
+
+        <hr size="10" color="black"/>
+
+        <h3>Listas</h3>
+
+        <p>Existem dois tipos de listas: <strong>'ul'</strong> e <strong>'ol'</strong>.</p>
+        <p>O <strong>'ul'</strong> é usado para criar uma lista desordenada (<em>Sem uma ordem numérica</em>), enquanto <strong>'ol'</strong>
+        é usado para uma lista ordenada.<br />Para criar uma lista, é necassário usar o comando <strong>'li'</strong>.</p>
+
+        <h4>Lista desordenada</h4>
+
+        <ul>
+            <li>É possível mudar a identação.</li>
+            <li type="Square">Agora está um quadrado </li>
+            <li type="1"><strong>Os 'li' é possível mudar, mas o 'ul' não.</strong>>
+                <ul>
+                    <li>É possível aninhar as listas
+                        <ul>
+                            <li>Conforme for alinhando, a identação muda de forma automática</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>Lista ordenada</h4>
+
+        <ol>
+            <li>Não é muito diferente da outra lista</li>
+            <li>A única diferença é que é possível mudar através do próprio 'ol'.
+                <ol type="i">
+                    <li>Assim por exemplo</li>
+                    <li><em>No 'ul' só é permitido mudar o 'type' através do comando 'li'</em>
+                        <ol type="I">
+                            <li>Também é possível aninhar <em>os dois tipos de listas</em></li>
+                            <li>Veja abaixo.
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>Se tem uma coisa que vale ressaltar</li>
+            <li>É que muitas vezes no começo eu confundi o <strong>'li'</strong> e colocava 'il'</li>
+            <li>Essa confusão é por relacionar com os comandos <strong>'ol'</strong> e <strong>'ul'</strong></li>
+        </ol>
+
+        <h3>Imagens</h3>
+
+        <p>O comando para inserir uma imagem é: '<strong>img src=""</strong>'. Tem como buscar a imagem direto de um link, ou pode adicionar a
+        imagem dentro do projeto.</p>
+        <p>O método do link é simples, basta copiar o link da imagem e <em>colar dentro das aspas depois do 'src='</em>.<br />
+        Agora para adicionar a imagem no projeto, será necessário baixar a imagem e depois criar uma pasta, dentro da pasta do projeto, e colocar
+        a imagem nessa pasta. Para buscar a imagem você terá que digitar o nome da pasta e depois do arquivo da imagem. Por exemplo, se o nome da 
+        pasta for "img" e do arquivo "Imagem 1", eu teria que escrever <em>img/Imagem 1<strong>.jpeg</strong></em>.</p>
+        <p>Imagens através do link, costumam demorar menos para carregar. Tem também o comando <strong>alt=""</strong>, que serve para descrever
+        a imagem, será útil para caso um deficiente visual entre no site, e ajuda a melhorar os fatores de busca.</p>
+        <p>Para mudar o tamanho da imagem, deve-se utilizar o comando <strong>'width'</strong>, e para ter uma idéia de tamanho, basta 'inspecionar'
+        a página e clicar na imagem.</p>
+
+        <img src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2018/05/20-sites-para-aprender-como-programar-de-gra%C3%A7a.png" 
+        alt="Uma imagem em formato de desenho ilustrando uma pessoa na frente do computador programando. Acima da pessoa, tem vários balõeszinhos 
+        mostrando linguagens de programação, incluindo JS, C++, CSS, CMS, PHP, HTML." width="43%"/>
+
+        <h3>Enviar para outra página/site.</h3>
+
+        <p>Para isso é necessário usar o comando <strong>'a href=""</strong>' e escrever o caminho de referência, por exemplo: 
+        <em>"contato/contato<strong>.html</strong>"</em>, o comando 'a href=""', <em>não se fecha sozinho.</em></p>
+
+        <a href="contato/contato.html">
+            <h3>Entre em contato</h3>
+        </a>
+
+        <h4>Erros: esqueci do ".html" na hora de buscar uma imagem; esqueci que o comando 'a' tem que ser fechado; para aninhar as listas, o 
+            comando 'ul' ou 'ol', devem estar dentro do 'li'; 'strong' deve ser menos usado, o 'em' que serve para enfatizar.
+        </h4>
+
+        <hr size="10" color="black" />
+
+        <h3>Tabelas</h3>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Aqui é o início do cabeçalho</th>
+                    <th>Começa com <em>'table'</em>, e depois <em>'thead'</em></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Aqui temos o <em>'tbody'</em></td>
+                    <td> Para colocar o texto é <em>'td'</em></td>
+                </tr>
+                <tr>
+                    <td>É importante usar o <em>'tr'</em></td>
+                    <td><strong>Sem ele não é possível fazer uma tabela maior do que 4 cédulas</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>Sempre colocar os 'tr', se for uma rabela com apenas 4 cédulas, não vai fazer diferença, mas se for fazer mais, o 'tr' tem que ser 
+            usado.
+        </h4>
+
+        <hr size="10" color="black" />
+
+        <h3>Estilizando com tabelas</h3>
+        <h5>Vale lembrar que esse método é inviável</h5>
+
+        <p>Quando uma imagem é utilizada (<em>como a que está logo acima</em>), e você ajusta o tamanho dela (<em>'width'</em>), a imagem em si
+        <strong>Não foi FORMATADA, ela só foi modificada visualmente</strong> para personalizar a página. Para fazer o que está abaixo, 
+        será necessário usar um programa chamado <em>Gimp</em> para formatar a imagem.</p>
+
+        <table >
+            <thead>
+                <Tr>
+                    <td>
+                        <img src="img revisão/imagem1.png"  alt="Uma imagem em formato de desenho ilustrando uma pessoa na frente do computador 
+                        programando. Acima da pessoa, tem vários balõeszinhos mostrando linguagens de programação, incluindo JS, C++, CSS, CMS, 
+                        PHP, HTML."/>
+                    </td>
+                    <td>
+                        <h4>Importante mencionar que, para colocar uma <em>imagem salva no código da página</em>, essa <strong>imagem precisa estar
+                            dentro de uma pasta, que esteja no mesmo local do código da pasta em questão.</strong></h4>
+                    </td>
+                </Tr>
+
+            </thead>
+        </table>
+
+        <hr color="black" size="10"/>
+        
+        <h3>Formulários</h3>
+
+        <form action="mailto: guigapo@hotmail.com" method="post" enctype="text/plain">
+            <label><em>'label' = Rótulo</em></label>
+            <input type="text" name="tanto faz"/> <br />
+            <label>Digite sua senha:</label>
+            <input type="password" name="senha"/> <br /> <br />
+            <input type="radio"/> <br /> <br />
+            <label>Digite seu email: </label>
+            <input type="email" name="email"/><br /> <br />
+            <label>Escreva uma mensagem:</label> <br />
+            <textarea rows="10" cols="30" name="frase">Digite aqui</textarea> <br /> <br />
+            <input type="submit"/> <br /> <br />
+        </form>
+        <p>Para fazer o <em>botão "enviar"</em>, basta fazer o comando <em>'input'</em> com o <em>'type'="submit"</em>. Existem outros como <em>
+        'password', 'radio', 'email'</em>, entre outros. Para ver todas as opções de um comando, basta digitar <strong>crtl+espaço</strong>.</p>
+        <p>O comando <em>'name'</em>, faz com que a informação escrita no input seja nomeada.</p>
+    </body>
+</html>
